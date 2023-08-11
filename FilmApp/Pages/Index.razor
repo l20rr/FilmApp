@@ -1,0 +1,19 @@
+﻿@page "/"
+@using System.Net.Http
+@using System.Threading.Tasks
+@using Microsoft.AspNetCore.Components
+@using System.Text.Json
+@inject HttpClient HttpClient
+
+<div class="conteinerfim">
+    <h1>Cartaz Cinema:</h1>
+    <div class="film">
+        @foreach (var movie in movies)
+        {
+            <div class="filmtitle">
+                <a href="/Details/@movie.id"><img src="@($"{image_path}{movie.poster_path}")" /></a>
+                <span>@movie.title</span>
+            </div>
+        }
+    </div>
+</div>

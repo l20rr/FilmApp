@@ -1,0 +1,58 @@
+﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+
+html, body {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+* {
+    font-family: 'League Spartan';
+}
+
+
+h1 {
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 280px;
+    border-radius: 1rem;
+    margin: 2rem;
+}
+
+span {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+a {
+    transition: all 2;
+}
+
+    a:hover {
+        transform: scale(1.1);
+    }
+
+.film {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.filmtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
